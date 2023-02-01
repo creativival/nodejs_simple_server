@@ -5,7 +5,5 @@ const router = require("express").Router(),
 
 router.get("/", homeController.index);
 router.get("/about", homeController.about);
-router.get("/geolonia_map", homeController.geolonia_map);
-router.get("/geojson", homeController.geojson);
 
 module.exports = router;

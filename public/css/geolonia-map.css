@@ -4,5 +4,14 @@
 }
 
 #geolonia_geojson {
-    height: 1000px;
+    height: 800px;
+}
+
+#text-button {
+    display: block;
+    cursor: pointer;
+    width: 160px;
+    text-align: center;
+    border: 1px solid #232323;
+    padding: 10px;
 }
