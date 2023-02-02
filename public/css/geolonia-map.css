@@ -15,3 +15,9 @@
     border: 1px solid #232323;
     padding: 10px;
 }
+
+#map {
+    /* A4 96dpi */
+    width: 1587px;
+    height: 1123px;
+}

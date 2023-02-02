@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <title>Example: @geolonia/mbgl-export-control</title>
+    <style>
+        #geolonia,
+        #map
+        {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>@geolonia/mbgl-export-control</h2>
+
+<div id="map"
+     data-lat="34.704395"
+     data-lng="135.494771"
+     data-zoom="14"
+></div>
+
+<% var test = 101; %>
+<div id="export_text"><%= text %></div>
+<div id="export_array"><%= array %></div>
+<div id="export_object"><%= ExportControl %></div>
+<script type="text/javascript" src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
+<script type="module" src="/js/bundle.js"></script>
+<!--<script type="module" src="/js/export_module.js"></script>-->
+<!--<script type="module" src="/js/import_module.js"></script>-->
+<!--<script type="application/javascript">-->
+<!--    console.log('alert')-->
+<!--    // const ExportControl = JSON.parse(JSON.stringify(export_object.innerText))-->
+
+<!--    const map = new mapboxgl.Map("#map");-->
+
+<!--    // Add the control to download png.-->
+<!--    map.addControl(new ExportControl());-->
+<!--</script>-->
+</body>
+</html>

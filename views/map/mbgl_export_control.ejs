@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <title>Example: @geolonia/mbgl-export-control</title>
+    <style>
+        #geolonia,
+        #map
+        {
+            width: 1000px;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>@geolonia/mbgl-export-control</h2>
+
+<div id="map"
+     data-lat="<%= lat %>"
+     data-lng="<%= lng %>"
+     data-zoom="<%= zoom %>"
+></div>
+
+<script type="text/javascript" src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
+<script type="module" src="/js/mbgl_export_control_bundle.js"></script>
+</body>
+</html>

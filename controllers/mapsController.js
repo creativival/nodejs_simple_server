@@ -57,6 +57,11 @@ module.exports = {
             layout: "map_layout",
         });
     },
+    js_geolonia_map: (req, res) => {
+        res.render("map/js_geolonia_map", {
+            layout: "js_map_layout",
+        });
+    },
     geojson: (req, res) => {
         const fileName = req.query.name || 'museum_locations';
 
@@ -66,6 +71,19 @@ module.exports = {
             path: "geojson",
             layout: "map_layout",
             fileName: fileName,
+        });
+    },
+    geolonia_map_export: (req, res) => {
+        res.render("map/geolonia_map_export", {
+            layout: "no_layout",
+        });
+    },
+    mbgl_export_control: (req, res) => {
+        res.render("map/mbgl_export_control", {
+            layout: "no_layout",
+            lat: req.query.lat || "34.704395",
+            lng: req.query.lng || "135.494771",
+            zoom: req.query.zoom || "14",
         });
     },
     maplibre_gl: (req, res) => {
