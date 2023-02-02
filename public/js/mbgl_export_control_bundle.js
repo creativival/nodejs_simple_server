@@ -572,11 +572,15 @@ if (typeof module !== "undefined" && module.exports) {
 }
 
 },{}],5:[function(require,module,exports){
+// export_map.js
 // import ExportControl from '@geolonia/mbgl-export-control'
 const ExportControl = require('@geolonia/mbgl-export-control').default;
 
 const map = new mapboxgl.Map("#map");
 
 // Add the control to download png.
-map.addControl(new ExportControl());
+map.addControl(new ExportControl({
+    dpi: 300,
+    attribution: "© Geolonia | © OpenStreetMap Contributors",
+}));
 },{"@geolonia/mbgl-export-control":2}]},{},[5]);
